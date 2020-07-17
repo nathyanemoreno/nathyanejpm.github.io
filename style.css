@@ -138,15 +138,15 @@ i {
 }
 
 .skill {
-	background: #262626;
+	background:#ffffff; 
 	padding: 4px;
 	box-sizing: border-box;
-	border: 1px solid #3fe0d0;
+	border: 1px solid #9248DA;
 	border-radius: 2px;
 }
 
 .skill_level {
-	background:#3fe0d0;
+	background:#822AD6;
 	width: 100%;
 	height: 10px;
 }
