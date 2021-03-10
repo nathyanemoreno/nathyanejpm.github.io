@@ -1,159 +1,135 @@
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+  color: #f1f1f1;
 }
 
 body {
-	font: 16px Helvetica, Sans-Serif;
-	line-height: 24px;
-	background: url(images/noise.jpg);
+  font-family: "Montserrat";
+  line-height: 24px;
+  /* background: url(images/noise.jpg); */
+  background-color: #2a2a2a;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 #page-wrap {
-	width: 800px;
-	margin: 40px auto 60px;
+  /* width: 900px; */
+  min-width: 900px;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 40px;
 }
 
 #pic {
-	float: right;
-	margin: -20px 0 0 0;
-	height: 250px;
-	width: 250px;
+  float: right;
+  margin: -20px 0 0 0;
+  height: 250px;
+  width: 250px;
+  scale: 1;
+  transform-origin: top right;
+  transform: scale(1);
+  transition: transform 160ms;
 }
 
-h1 {
-	margin: 0 0 16px 0;
-	padding: 0 0 16px 0;
-	font-size: 42px;
-	font-weight: bold;
-	letter-spacing: -2px;
-	border-bottom: 1px solid #999;
-	line-height: 1;
-}
-
-h2 {
-	font-size: 20px;
-	margin: 0 0 6px 0;
-	position: relative;
-}
-
-h2 span {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	font-style: italic;
-	font-family: Georgia, Serif;
-	font-size: 16px;
-	color: #999;
-	font-weight: normal;
+#pic:hover {
+  transform: scale(1.25);
 }
 
 p {
-	margin: 0 0 16px 0;
+  margin: 0 0 16px 0;
 }
 
 a {
-	color: #999;
-	text-decoration: none;
-	border-bottom: 1px dotted #999;
+  color: #999;
+  text-decoration: none !important;
+  border-bottom: 1px solid #d1d1d1;
 }
 
 a:hover {
-	border-bottom-style: solid;
-	color: black;
+  border-color: #fff;
+  color: #fff;
 }
 
 ul {
-	margin: 0 0 32px 17px;
+  margin: 0 0 32px 17px;
 }
 
 #objective {
-	width: 500px;
-	float: left;
+  width: 600px;
+  margin: 32px;
+  /* float: left; */
 }
 
 #objective p {
-	font-family: Georgia, Serif;
-	font-style: italic;
-	color: #666;
-}
-
-dt {
-	font-style: italic;
-	font-weight: bold;
-	font-size: 18px;
-	text-align: right;
-	padding: 0 26px 0 0;
-	width: 150px;
-	float: left;
-	height: 100px;
-	border-right: 1px solid #999;
-}
-
-dd {
-	width: 600px;
-	float: right;
-}
-
-dd.clear {
-	float: none;
-	margin: 0;
-	height: 15px;
+  color: #999;
 }
 
 i {
-	margin-right: 10px;
+  margin-right: 10px;
 }
+
+.w-200 {
+  width: 200px;
+}
+
+.icon {
+  width: 16px;
+}
+
 .icon2x {
-	font-size: 26px;
-	margin-right: 16px;
+  font-size: 26px;
+  /* margin-right: 16px; */
 }
 
-.center {
-	width: 80%;
+.skillBox:hover {
+  transform: scale(1.1);
+  background-color: #f1f1f1;
 }
 
-.skillGrid {
-	display: flex;
-	box-sizing: border-box;
-	padding-left: 20px;
+.skillBox:hover p {
+  color: #191919;
+  font-weight: bold;
 }
 
 .skillBox {
-	box-sizing: border-box;
-	width: 100%;
-	margin: 8px 8px 10px 10px;
+  background-color: inherit;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 8px 2px;
+  transform: scale(1);
+  padding: 8px;
+  border-radius: 2px;
+  transition: all 160ms ease;
 }
 
 .skillBox p {
-	text-transform: uppercase;
-	font-size: 16px;
-	margin: 0;
-	padding: 0;
-	font-weight: bold;
-	letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 16px;
+  /* font-weight: bold; */
+  margin: 2px;
+  padding: 0;
+  letter-spacing: 1px;
 }
 
-.skillBox p:nth-child(2) {
-	float: right;
-	position: relative;
-	top: -25px;
+.skill:hover {
+  background-color: #2a2a2a;
 }
 
 .skill {
-	background: #ffffff;
-	padding: 4px;
-	box-sizing: border-box;
-	border: 1px solid #9248da;
-	border-radius: 2px;
+  background: #191919;
+  padding: 4px;
+  box-sizing: border-box;
+  border: 1px solid #9248da;
+  border-radius: 2px;
+  transition: background-color 160ms;
 }
 
 .skill_level {
-	background: #822ad6;
-	width: 100%;
-	height: 10px;
+  background: #822ad6;
+  /* width: 100%; */
+  height: 10px;
+  border-radius: 2px;
 }
